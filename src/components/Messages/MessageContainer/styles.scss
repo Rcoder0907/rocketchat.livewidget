@@ -1,0 +1,24 @@
+@import '../../../styles/variables';
+
+$message-container-margin: 0 0 $default-padding 0;
+$message-container-compact-margin: 0 0 ($default-padding / 4) 0;
+
+.message-container {
+	display: flex;
+
+	margin: $message-container-margin;
+	justify-content: start;
+
+	&--compact {
+		margin: $message-container-compact-margin;
+	}
+
+	&--reverse {
+		flex-direction: row-reverse;
+	}
+
+	&-break {
+		display: flex;
+		flex-wrap: wrap;
+	}
+}
